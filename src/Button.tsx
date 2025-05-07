@@ -4,9 +4,10 @@ import useCount from "./store";
 export const Button = () => {
     const [state, setState] = useCount();
     return (
-        <div>
+        <div className="remoteApp">
+            <h1>Remote App</h1>
             <button className="shared-btn" onClick={() => setState((s) => s + 1)}>
-                Click me: {state}
+                REMOTE APP: {state}
             </button>
         </div>
     );
